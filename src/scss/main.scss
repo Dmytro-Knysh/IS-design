@@ -1,0 +1,71 @@
+//$font-size: 1rem;
+//$font-color: black;
+//$body-color: rgb(229, 251, 229);
+//html{
+  //  font-size: $font-size;
+  //  color: $font-color;
+  //  background-color: $body-color;
+//}
+$green:#B4F6C5;
+$black:#000000;
+$grey:#D9D9D9;
+
+$width:1920px;
+$header-height:133px;
+$footer-height:342px;
+$content-height:1597px;
+$frame-width:474px;
+$frame-height:791px;
+
+$margin-left:101px;
+$margin-right:101px;
+$margin-top:385px;
+
+html{
+    color:rgb(0, 0, 0);
+    background-color: white;
+}
+header,main,content,footer{
+    border: 1px dashed black;
+}
+body{
+    max-width: $width;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 32px;
+}
+header{
+    height:$header-height;
+    background-color: $green;
+}
+footer{
+    margin-top: 554px;
+    background: url('../../sincerely-media-Y0hLfXje8bQ-unsplash (2).jpg');
+    height: $footer-height;
+}
+
+article {
+    margin-top: 252px;
+    max-width: 474px;
+    margin-left: 84px;
+    height: $frame-height;
+    background-color: $grey;
+}
+div{
+    margin-left: 106px;
+    margin-right: 106px;
+    margin-top: 576px;
+}
+
+
+//header 
+//h1 Header 
+//main 
+//article 
+  //  section 
+   // h2 IMAGE
+     //   div Text
+//footer 
+//h1 Footer
