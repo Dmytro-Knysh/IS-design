@@ -1,4 +1,47 @@
-article 
-    section 
-        h2 IMAGE
-          div Text
+section.frames
+  .container
+    .frames__wrapper
+      .frames__frame
+        img.frames__img(src="https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dG91cnxlbnwwfHwwfHw%3D&w=1000&q=80", alt="Frame 1")
+        .frames__content
+          h3.frames__title Париж
+          p.frames__text Найцікавіший тур у Париж, літаком бізнес класу, з найкращими готелями.
+          button.frames__buy Купити
+      .frames__frame
+        img.frames__img(src="https://piligrim.ua/wp-content/uploads/2021/09/The_Rock.jpg", alt="Frame 2")
+        .frames__content
+          h3.frames__title Екзотичний Тайланд
+          p.frames__text Найкраща путівка для літнього відпочинку
+          button.frames__buy Купити
+      .frames__frame
+        img.frames__img(src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/swiezmifobyjibudd4cc/4IslandsSpeedboat,LongtailBoat,orCruiseTourfromKrabi.jpg", alt="Frame 3")
+        .frames__content
+          h3.frames__title Іспанія
+          p.frames__text Незабутьна подорож до Іспанії
+          button.frames__buy Купити
+
+
+button#custom-tour-btn(type="button") Створити власний тур
+.custom-tour-window.hidden
+  .header
+    h2 Створіть свій власний тур
+  .form
+  label(for="destination") Країна:
+  select#destination(name="destination")
+    option(value="bali") Балі
+    option(value="thailand") Тайланд
+    option(value="japan") Японія
+
+  label(for="transport") Тип транспорту:
+  select#transport(name="transport")
+    option(value="plane") Літак
+    option(value="train") Потяг
+    option(value="bus") Автобус
+  label(for="hotel") Duration:
+  select#hotel(name="hote,")
+    option(value="premium") Premium
+    option(value="standart") Standart
+    option(value="econom") Econom
+  .buttons
+    button#submit-btn(type="button") Оформити
+    button#cancel-btn(type="button") Назад
