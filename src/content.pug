@@ -22,26 +22,23 @@ section.frames
 
 
 button#custom-tour-btn(type="button") Створити власний тур
+
 .custom-tour-window.hidden
   .header
     h2 Створіть свій власний тур
   .form
-  label(for="destination") Країна:
-  select#destination(name="destination")
-    option(value="bali") Балі
-    option(value="thailand") Тайланд
-    option(value="japan") Японія
+    label(for="destination") Країна:
+    select#destination(name="destination")
+      option(value="Option1" cost="2") Option1
+    label(for="transport") Тип транспорту:
+    select#transport(name="transport")
+     
+    label(for="hotel") Готель:
+    select#hotel(name="hotel")
 
-  label(for="transport") Тип транспорту:
-  select#transport(name="transport")
-    option(value="plane") Літак
-    option(value="train") Потяг
-    option(value="bus") Автобус
-  label(for="hotel") Duration:
-  select#hotel(name="hote,")
-    option(value="premium") Premium
-    option(value="standart") Standart
-    option(value="econom") Econom
+
+    .total-cost Total cost:
+    span#total-value 0 грн
   .buttons
     button#submit-btn(type="button") Оформити
     button#cancel-btn(type="button") Назад

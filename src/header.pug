@@ -4,6 +4,32 @@ header.header
     nav.header__nav
       ul.header__nav-list
         li.header__nav-item
-          a.header__nav-link(href="#") Вхід
+          a.header__nav-link(href="#loginModal" data-bs-toggle="modal" data-bs-target="#loginModal" id="loginModalLink") Вхід
         li.header__nav-item
-          a.header__nav-link(href="#") Зареєструватися
+          a.header__nav-link(href="#registrationModal" data-bs-toggle="modal" data-bs-target="#registrationModal" id="registrationModalLink") Зареєструватися
+
+div#registrationModal.modal
+  div.modal-content
+    span.close-modal5 &times;
+    h2 Реєстрація
+    form
+      label(for="email") Номер телефону
+      input#email(type="email" required)
+      label(for="login") Логін
+      input#login(type="text" required)
+      label(for="password") Пароль
+      input#password(type="password" required)
+      label(for="confirm-password") Підтвердження паролю
+      input#confirm-password(type="password" required)
+      button(type="submit") Зареєструватися
+
+div#loginModal.modal
+  div.modal-content
+    span.close-modal6 &times;
+    h2 Вхід
+    form
+      label(for="login") Логін
+      input#login(type="text" required)
+      label(for="password") Пароль
+      input#password(type="password" required)
+      button(type="submit") Увійти
